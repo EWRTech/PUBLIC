@@ -1,0 +1,105 @@
+{
+    "config_version" : 0.1,
+
+    "environments" : {
+        "dev" : 1,
+        "testing" : 1,
+        "prod" : 0
+    },
+
+    "maintenance_status" : 0,
+    "allow_new_installations" : 1,
+    "allow_bugs_fix_updates" : 1,
+    "allow_ewr_upgrades" : 0,
+    "allow_periodic_sys_updates" : 1,
+    "exceptaion_case" : 0,
+
+    "groups" : {
+        "A" : 1,
+        "B" : 0,
+        "G" : 1,
+        "H" : 0,
+        "I" : 0,        
+        "J" : 0,
+        "K" : 0,
+        "L" : 0,
+        "M" : 0,
+        "N" : 0
+    },
+
+    "supported_os" : ["bullseyes", "Jellyfish"],
+
+    "hardware_req" : {
+        "cpu" : ["64bit", "amd", "arm"],
+        "disk" : 8,
+        "memory" : 2,
+        "network" : 1
+    },
+
+    "not_supported_versions" : 0.3,
+
+    "last_supported_versions" : 2.0,
+    
+    "latest_version" : {
+        "ess" : 2.6,
+        "epad" : 2.6,
+        "eshare" : 2.6,
+        "efiles" : 2.6,
+        "sys_pkg" : 2.6
+    },
+
+    "registration_src" : [
+        {
+            "status" : 1,
+            "link" : "https://www.example.com/PRIMARY/link1"
+        },
+        {
+            "status" : 0,
+            "link" : "https://www.example.com/SECONDARY/link2"
+        }        
+    ],
+
+    "de-registration_src" : [
+        {
+            "status" : 1,
+            "link" : "https://www.example.com/PRIMARY/link1"
+        },
+        {
+            "status" : 0,
+            "link" : "https://www.example.com/SECONDARY/link2"
+        }        
+    ],
+
+    "upgrade_src" : [
+        {
+            "status" : 1,
+            "link" : "https://www.example.com/PRIMARY/link1"
+        },
+        {
+            "status" : 0,
+            "link" : "https://www.example.com/SECONDARY/link2"
+        }        
+    ],
+
+    "periodic_validation_time" : {
+        "no_less_than" : "01/16/2023",
+        "every_x_days" : 15
+    },
+
+    "license_validation_src" : [
+        {
+            "status" : 1,
+            "link" : "https://www.example.com/PRIMARY/link1"
+        },
+        {
+            "status" : 0,
+            "link" : "https://www.example.com/SECONDARY/link2"            
+        }
+    ],
+ 
+    "periodic_sys_updates_time" : {
+        "no_less_than" : "01/16/2021",
+        "every_x_days" : 120
+    }
+
+}
